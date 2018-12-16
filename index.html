@@ -4,8 +4,13 @@
     <title>Learn Enough JavaScript</title>
     <meta charset="utf-8">
     <script>
-      alert("hello, world!");
-      alert("Hello Mother Fucker");
+      const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday',
+                          'Thursday', 'Friday', 'Saturday'];
+
+      let now = new Date();
+      let dayName = daysOfWeek[now.getDay()];
+      
+      alert(`Hello World! Happy ${dayName}.`);
     </script>
   </head>
   <body>
